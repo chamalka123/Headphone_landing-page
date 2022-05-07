@@ -1,0 +1,40 @@
+@media screen and (max-width: 768px) {
+  .section-a {
+    h1 {
+      font-size: 3.5rem !important;
+      line-height: 0rem !important;
+    }
+
+    p {
+      padding: 0;
+      margin: 0.7rem 0;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr !important;
+      text-align: center !important;
+
+      img {
+        width: 80%;
+        margin: auto;
+      }
+
+      .sampe-div {
+        &:first-child {
+          order: 2;
+        }
+
+        &:last-child {
+          order: -1;
+        }
+      }
+    }
+  }
+
+  .section-b-inner {
+    h2 {
+      font-size: 1rem;
+    }
+  }
+}
